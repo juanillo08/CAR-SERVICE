@@ -1,0 +1,138 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+// FEATURES
+.features{
+    &__wrapper{
+        @include centerAll;
+        h1{
+            font-size: 2rem;
+            text-align: start;
+            margin: 2rem;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $clr--light;
+            border-bottom-color: rgba(219, 214, 215, 0.144);
+        }
+       
+    }
+    &__card{
+        display: flex;
+        gap: 5rem   ; 
+    }
+    &__item{
+        
+      max-width: 17rem;
+      h2{
+        padding-bottom: 2rem;
+    }
+    p{  
+        max-width: 20rem;
+    }
+    a{
+        background-color: $clr--secondary;
+        margin: 5rem;
+        padding: 1rem 2rem;
+        color: $clr--light;
+        font-weight: 600;
+        &:hover{
+            background-color: $clr--light;
+            color: $clr--dark;
+        }
+    }
+    }
+ 
+}
+
+// HISTORY
+.history{
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+   
+    }
+    &__text{
+        display: flex;
+        
+    }
+    &__text--details{
+        margin: 4rem;
+      h1{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        margin: 2rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid $clr--light;
+        border-bottom-color: rgba(219, 214, 215, 0.144);
+      }
+      p{
+        margin: 2rem;
+        max-width: 65rem;
+      }
+    }
+    &__opportunity{
+        margin: 4rem;
+        h1{
+            font-size: 2rem;
+            padding-bottom: 3rem;
+            padding-top: 2rem;
+            border-bottom: 1px solid $clr--light;
+            border-bottom-color: rgba(219, 214, 215, 0.144);
+        }
+        p{
+            margin-right: .5rem;
+            max-width: 27rem;
+        }
+    }
+    &__text--opportunity{
+        
+          color: rgb(175, 170, 170);
+          padding-top: 1rem;
+          &:hover{
+            color: $clr--primary;
+          } 
+      }   
+}
+
+// TEAM
+
+.team{
+    &__title{
+        margin: 4rem;
+        
+        h1{
+            margin: 3rem;
+            border-bottom: 1px solid $clr--light;
+            border-bottom-color: rgba(92, 88, 89, 0.144);
+            font-size: 2rem;
+            color: $clr--primary;
+        }
+    }
+    &__card{
+        @include grid(4, 0rem);
+        
+    }
+    &__item{
+        margin: 4rem 3rem;
+        margin-top: -1rem;
+        img{
+            max-width: 100rem;
+       
+        }
+        h2{
+            font-size: .8rem ;
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+            color: $clr--secondary;
+            &:hover{
+                color: $clr--dark;
+            }
+        }
+        p{
+            max-width: 15rem;
+            color: $clr--primary;
+        }
+    }
+}
+  

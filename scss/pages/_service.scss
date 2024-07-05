@@ -1,0 +1,119 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+// SERVICE
+.service{
+    margin-bottom: -20rem;
+    &__wrapper{
+       padding: .5rem;
+        
+    }
+    &__title{
+        h3{
+            font-family: $font--primary;
+            font-size: 2rem;
+            margin: 7rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid $clr--light;
+            border-bottom-color: rgba(219, 214, 215, 0.144);
+        } 
+    }
+    &__card{
+        @include grid(3,1rem);
+        padding: 7rem;
+    }
+    &__item{
+        margin-top: -11rem;
+      
+        h2{
+            padding-bottom: .5rem;
+            padding-top: 1rem;
+            color: $clr--secondary;
+            font-size: .8rem;
+            &:hover{
+                color: $clr--dark;
+            }
+        }
+        img{
+            max-width: 25rem;
+        }
+        p{
+            max-width: 25rem;
+            padding-bottom: 13rem;
+           
+        }
+    }
+}
+
+// PRICING LIST
+.price{
+    padding-top: 25rem;
+    &__wrapper{
+        
+        padding: 8rem;
+        display: flex;
+    }
+    &__report{   
+        h1{
+            font-size: 2rem;
+            color: $clr--dark;
+            border-bottom: 1px solid $clr--dark;
+            border-bottom-color: rgba(121, 119, 120, 0.671);
+            max-width: 25rem;
+            padding-bottom: 1rem;
+        }
+        p:nth-last-child(2){
+            color: $clr--secondary;
+            padding-top: 3rem;
+            max-width: 25rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $clr--dark;
+            border-bottom-color: rgba(121, 119, 120, 0.671);
+            &:hover{
+                color: $clr--dark;
+            }
+        }
+        p{
+            color: $clr--dark;
+            padding-top: .5rem;
+            max-width: 65rem;
+           
+        }
+        }
+      &__list{
+        padding-left: 15rem;
+        color: $clr--dark;
+        margin-left: -13rem;
+        h1{
+            font-size: 2rem;
+            color: $clr--secondary;
+            max-width: 44rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $clr--dark;
+            border-bottom-color: rgba(121, 119, 120, 0.671);
+            color: $clr--dark;
+            margin-top: -.1rem;
+        }
+        p{
+            color: $clr--dark;
+            padding-bottom: 2rem;
+        }
+      }
+      ul{
+        @include grid(3,0rem);
+        
+        
+      }
+      li{
+        gap: 5rem;
+        max-width: 20rem;
+        &:hover{
+            color: $clr--secondary;
+        }
+      }
+    }
+  
+   
+ 
+

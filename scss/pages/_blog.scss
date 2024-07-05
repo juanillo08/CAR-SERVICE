@@ -1,0 +1,63 @@
+@use "../abstract/" as*;
+@use "../base/" as *;
+
+.blog{
+    &__wrapper{
+        padding-bottom: 4rem;
+    }
+    &__title{
+       h3{
+        margin: 5rem;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        
+        border-bottom-color: rgba(219, 214, 215, 0.144);
+       }
+       img{
+        width:23rem;
+   
+        height: 12.7rem;
+        margin-left: 2rem;
+    }  
+    }
+    &__item{
+        padding-left: -4rem;
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+        margin-right: 25rem ;
+        border-bottom: 1px solid $clr--light;
+        padding-bottom: 2rem;
+
+        h2{
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+   
+    &__text{
+        margin-left: 2rem;
+    }
+    p{
+        padding-top: 1rem;
+        font-size: .9rem;
+        max-width: 25rem;
+        padding-bottom: 2rem;
+    }
+    a{
+        background-color: $clr--secondary;
+        padding: .7rem 1.7rem;
+        color: $clr--light;
+        font-weight: 600;
+        &:hover{
+            background-color: $clr--light;
+            color: $clr--dark;
+    }
+}
+    &__entries{
+        margin: 5rem;
+        a{
+            padding: 12rem;
+        }
+    }
+}

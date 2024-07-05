@@ -1,0 +1,82 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+// Front
+.homeBanner{
+    &__img{
+        position: absolute;
+        width: 75.5%;
+    }
+    &__text{
+        font-size: 3rem;
+
+        max-width: 75rem;
+        position: relative;
+    }
+    h1{
+        padding-left: 57rem;
+        padding-top: 14rem;
+        font-weight: 100;
+        line-height: 3rem;
+    }
+}
+
+// REPAIR
+.repair{
+
+    padding-top: 20rem;
+    &__wrapper{
+        padding-bottom: 10rem;
+    }
+    &__card{
+      @include grid(4,1rem);
+      padding: 5rem;
+    }
+    &__item{
+        h1{
+            border-bottom: 4px solid rgba(128, 128, 128, 0.397);
+     
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            font-weight: 100;
+            width: 15rem;
+        }
+        i{
+            margin-top: -3rem;
+            font-size: 2.5rem;
+            padding: 6rem;
+            text-align: center;
+            &:hover{
+                color: $clr--secondary;
+            }
+         
+        }
+        p{
+            margin-top: -3rem;
+            text-align: center;
+           width: 15rem;
+            padding-bottom: 4rem;
+        }
+        a{
+            margin-left: 4.5rem;
+            background-color: $clr--secondary;
+            color: $clr--light;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            justify-content: space-between;
+            &:hover{
+                background-color: #fff;
+                color: $clr--dark;
+            }
+        }
+        &:hover{
+            background-color: #26252A;
+            margin-top: 5rem;
+        }
+    }
+  
+}
